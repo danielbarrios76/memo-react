@@ -30,12 +30,12 @@ class MemoForm extends Component {
 
   render() {
     return (
-      <div className="tile">
+      <div className="pad">
       	<form onBlur={this.handleBlur} >
 					<input className='input' type="text" name="title" placeholder='Title for Memo'
             value={this.state.title} onChange={this.handleInput}
             ref={this.props.titleRef} />
-					<textarea className='input' name="body" placeholder='Memo description'
+					<textarea className='input' name="body" placeholder= {new Date().toJSON().slice(0,10)} 
             value={this.state.body} onChange={this.handleInput}></textarea>
       	</form>
       </div>

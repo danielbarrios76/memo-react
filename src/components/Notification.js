@@ -10,7 +10,7 @@ const defaultStyle = {
 }
 
 const transitionStyles = {
-  entering: { opacity: 1, background: 'lightgreen' },
+  entering: { opacity: 1, background: 'lightblue' },
   entered:  { opacity: 1 },
 }
 

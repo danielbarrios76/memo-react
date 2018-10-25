@@ -17,7 +17,7 @@
   color: #61dafb;
 }
 
-.tile {
+.pad {
   height: 300px;
   width: 300px;
   margin: 25px;
@@ -53,7 +53,7 @@
 
 textarea {
   resize: none;
-  height: 90px;
+  height: 290px;
   font-size: 15px;
 }
 
@@ -66,6 +66,6 @@ textarea {
   color: red;
 }
 
-.tile:hover .deleteButton {
+.pad:hover .deleteButton {
   visibility: visible;
 }

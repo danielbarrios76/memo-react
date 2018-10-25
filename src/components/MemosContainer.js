@@ -28,6 +28,7 @@ class MemosContainer extends Component {
     axios.post('http://localhost:3001/memos', {memo: {title: 'New Memo', body: 'Memo Description'}})
     .then(response => {
       const memos = update(this.state.memos, { $splice: [[0, 0, response.data]]})
+      memos.sort()
       this.setState({memos: memos, editingMemoId: response.data.id})
     })
     .catch(error => console.log(error))
