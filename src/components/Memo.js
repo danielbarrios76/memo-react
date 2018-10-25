@@ -7,7 +7,7 @@ class Memo extends Component {
 
 	render () {
 		return(
-		  <div className="tile">
+		  <div className="pad">
 		  	<span className="deleteButton" onClick={this.handleDelete}>x</span>
 		    <h4 onClick={this.handleClick}>{this.props.memo.title}</h4>
 		    <p onClick={this.handleClick}>{this.props.memo.body}</p>
